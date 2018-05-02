@@ -24,11 +24,7 @@ def puzzle_answer(text):
     item_list[1] = item_list[1][:2] + '=' + item_list[1][3:]
     item_list[2] = item_list[2][:3] + '=' + item_list[2][4:]
     item_list[3] = item_list[3][:4] + '='
-    answer = ''' ABCD
-    {0}
-    {1}
-    {2}
-    {3}'''.format(*item_list)
+    answer = ''' ABCD\n{0}\n{1}\n{2}\n{3}'''.format(*item_list)
     return answer
 
 
