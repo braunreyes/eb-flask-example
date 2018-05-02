@@ -1,6 +1,13 @@
 from flask import Flask, request
 application = Flask(__name__)
 
+PUZZLE_ANSWER = '''
+ ABCD
+A=>>>
+B<=>>
+C<<=>
+D<<<=
+'''
 
 @application.route("/", methods=['GET'])
 def root():
@@ -24,13 +31,7 @@ def root():
     if q == 'Degree':
         return 'Bachelors in Marketing and Masters in Education are not relevant to Data Engineering'
     if q == 'Puzzle':
-        return '''
-         ABCD
-        A=>>>
-        B<=>>
-        C<<=>
-        D<<<=
-        '''
+        return PUZZLE_ANSWER
     if q == 'Email':
         return 'braunr00@gmail.com'
     if q == 'Source':
