@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from puzzle_answer import puzzle_answer
 application = Flask(__name__)
 
 def puzzle_answer(text):
