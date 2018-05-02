@@ -7,7 +7,6 @@ def puzzle_answer(text):
     #         item_list[i] = item.replace('->','>>')
     #     elif '<-' in item:
     #         item_list[i] = item.replace('<-','<<')
-    print(item_list)
     for i,item in enumerate(item_list):
         if item[1] == '-':
             item = item[:1] + '<' + item[2:]
@@ -26,4 +25,4 @@ def puzzle_answer(text):
     return answer
 
 if __name__ == '__main__':
-    print(puzzle_answer('Please solve this puzzle: ABCD A->-- B-=-- C>--- D-<--'))
+    print(puzzle_answer('Please solve this puzzle: ABCD A=--- B---> C<--- D>---'))
