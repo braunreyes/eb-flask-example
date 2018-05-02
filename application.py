@@ -31,7 +31,10 @@ def root():
         C<<=>
         D<<<=
         '''
-    if q == ''
+    if q == 'Email':
+        return 'braunr00@gmail.com'
+    if q == 'Source':
+        return 'https://github.com/braunreyes/eb-flask-example'
     else:
         return 'OK'
 
